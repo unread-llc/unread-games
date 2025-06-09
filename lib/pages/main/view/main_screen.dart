@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:movie_app/pages/wallet/view/wallet_screen.dart';
+import 'package:unread_games/pages/wallet/view/wallet_screen.dart';
 import '../../home/view/home_screen.dart';
 import '../logic/main_controller.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
@@ -37,7 +37,9 @@ class MainScreen extends StatelessWidget {
                   BottomNavigationBarItem(
                     icon: Icon(
                       PhosphorIcons.house(
-                        currentPage.value == 0 ? PhosphorIconsStyle.fill : PhosphorIconsStyle.regular,
+                        currentPage.value == 0
+                            ? PhosphorIconsStyle.fill
+                            : PhosphorIconsStyle.regular,
                       ),
                     ),
                     label: 'Home',
@@ -45,7 +47,9 @@ class MainScreen extends StatelessWidget {
                   BottomNavigationBarItem(
                     icon: Icon(
                       PhosphorIcons.timer(
-                        currentPage.value == 1 ? PhosphorIconsStyle.fill : PhosphorIconsStyle.regular,
+                        currentPage.value == 1
+                            ? PhosphorIconsStyle.fill
+                            : PhosphorIconsStyle.regular,
                       ),
                     ),
                     label: 'Wallet',
