@@ -70,6 +70,7 @@ flutter:
     - assets/png/circles.png
     - assets/png/logo.svg
     - assets/png/brown_board.png
+    - assets/data/connections_level1.json
   # https://flutter.dev/assets-and-images/#resolution-aware
 
   # For details regarding adding assets from package dependencies, see

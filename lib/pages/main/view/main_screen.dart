@@ -6,6 +6,8 @@ import '../logic/main_controller.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 import '../../grid/view/grid_screen.dart';
 import '../../chess/view/chess_screen.dart';
+import '../../connections/view/connections_screen.dart';
+
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
 
@@ -24,6 +26,7 @@ class MainScreen extends StatelessWidget {
               WalletScreen(),
               GridScreen(),
               ChessScreen(),
+              ConnectionsScreen(),
             ],
           ),
           bottomNavigationBar: ObxValue(
@@ -78,6 +81,16 @@ class MainScreen extends StatelessWidget {
                       ),
                     ),
                     label: 'Chess',
+                  ),
+                  BottomNavigationBarItem(
+                    icon: Icon(
+                      PhosphorIcons.gridNine(
+                        currentPage.value == 4
+                            ? PhosphorIconsStyle.fill
+                            : PhosphorIconsStyle.regular,
+                      ),
+                    ),
+                    label: 'Connections',
                   ),
                 ],
               );
