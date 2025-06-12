@@ -1,0 +1,14 @@
+{
+  "words": [
+    "Apple", "Banana", "Cherry", "Date",
+    "Elephant", "Fox", "Giraffe", "Horse",
+    "Ice", "Jelly", "Kite", "Lemon",
+    "Moon", "Nest", "Ocean", "Planet"
+  ],
+  "correctGroups": [
+    ["Apple", "Banana", "Cherry", "Date"],
+    ["Elephant", "Fox", "Giraffe", "Horse"],
+    ["Ice", "Jelly", "Kite", "Lemon"],
+    ["Moon", "Nest", "Ocean", "Planet"]
+  ]
+}
