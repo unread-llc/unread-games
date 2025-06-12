@@ -4,7 +4,8 @@ import 'package:unread_games/pages/wallet/view/wallet_screen.dart';
 import '../../home/view/home_screen.dart';
 import '../logic/main_controller.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
-
+import '../../grid/view/grid_screen.dart';
+import '../../chess/view/chess_screen.dart';
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
 
@@ -21,18 +22,22 @@ class MainScreen extends StatelessWidget {
             children: const [
               HomeScreen(),
               WalletScreen(),
+              GridScreen(),
+              ChessScreen(),
             ],
           ),
           bottomNavigationBar: ObxValue(
             (currentPage) {
               return BottomNavigationBar(
-                onTap: (index) {
-                  controller.state.pageController.jumpToPage(index);
-                  controller.onPageChanged(index);
-                },
-                showSelectedLabels: false,
-                showUnselectedLabels: false,
-                currentIndex: currentPage.value,
+              onTap: (index) {
+                controller.state.pageController.jumpToPage(index);
+                controller.onPageChanged(index);
+              },
+              showSelectedLabels: false,
+              showUnselectedLabels: false,
+              currentIndex: currentPage.value,
+              selectedItemColor: Colors.black,       // Set your desired color
+              unselectedItemColor: Colors.grey,  
                 items: [
                   BottomNavigationBarItem(
                     icon: Icon(
@@ -53,6 +58,26 @@ class MainScreen extends StatelessWidget {
                       ),
                     ),
                     label: 'Wallet',
+                  ),
+                  BottomNavigationBarItem(
+                    icon: Icon(
+                      PhosphorIcons.gameController(
+                        currentPage.value == 2
+                            ? PhosphorIconsStyle.fill
+                            : PhosphorIconsStyle.regular,
+                      ),
+                    ),
+                    label: 'Grid',
+                  ),
+                  BottomNavigationBarItem(
+                    icon: Icon(
+                      PhosphorIcons.book(
+                        currentPage.value == 3
+                            ? PhosphorIconsStyle.fill
+                            : PhosphorIconsStyle.regular,
+                      ),
+                    ),
+                    label: 'Chess',
                   ),
                 ],
               );

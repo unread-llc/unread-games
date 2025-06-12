@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'core/suite/core_pages.dart';
 import 'core/suite/core_routes.dart';
 import 'storage/my_storage.dart';
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

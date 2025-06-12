@@ -32,7 +32,11 @@ dependencies:
     sdk: flutter
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-
+  flutter_chess_board: ^1.0.1
+  provider: ^6.0.5
+  http: ^0.13.5
+  chess: ^0.7.0
+  equatable: ^2.0.5
   phosphor_flutter: ^2.1.0
   cupertino_icons: ^1.0.6
   get: ^4.6.6
@@ -46,7 +50,7 @@ dev_dependencies:
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
+  # package. See that file for i  nformation about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^3.0.0
 
@@ -65,8 +69,7 @@ flutter:
     - assets/png/
     - assets/png/circles.png
     - assets/png/logo.svg
-
-  # An image asset can refer to one or more resolution-specific "variants", see
+    - assets/png/brown_board.png
   # https://flutter.dev/assets-and-images/#resolution-aware
 
   # For details regarding adding assets from package dependencies, see
