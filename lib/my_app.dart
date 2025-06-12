@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         }
       },
       child: GetMaterialApp(
-        title: 'Movie app',
+        title: 'Unread Games',
         theme: ThemeData(
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
